@@ -1,0 +1,7 @@
+#
+# PageTS for WeimaranerVomHimmelreich
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">
