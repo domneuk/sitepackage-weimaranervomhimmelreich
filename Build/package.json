@@ -3,7 +3,7 @@
   "description": "Site-Template von Weimaraner vom Himmelreich",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/domneuk/sitepackage-weimaranervomhimmelreich"
   },
   "homepage": "https://www.weimaraner-vom-himmelreich.de",
   "author": "Dominik Neukamm",
