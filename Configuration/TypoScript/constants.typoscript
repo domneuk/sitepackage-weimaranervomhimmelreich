@@ -47,10 +47,10 @@ page {
 ### CONFIG ###
 ##############
 config {
-    no_cache = 0
+    no_cache = 1 # TODO: remove, just for debugging
     removeDefaultJS = 0
     admPanel = 1
     prefixLocalAnchors = all
-    headerComment = build by sitepackagebuilder.com
+    headerComment = Weimaraner vom Himmelreich
     sendCacheHeaders = 1
 }

@@ -144,7 +144,7 @@ page {
     }
 
     includeCSS {
-        weimaranervomhimmelreich_layout = EXT:weimaranervomhimmelreich/Resources/Public/Css/layout.min.css
+        weimaranervomhimmelreich_layout = EXT:weimaranervomhimmelreich/Resources/Public/Css/main.css
     }
 
     includeJSLibs {
