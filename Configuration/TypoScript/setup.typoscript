@@ -144,6 +144,16 @@ page {
     }
 
     includeCSS {
+        weimaranervomhimmelreich_google = https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700
+        weimaranervomhimmelreich_google.external = 1
+        weimaranervomhimmelreich_linearicons = EXT:weimaranervomhimmelreich/Resources/Public/Css/linearicons.css
+        weimaranervomhimmelreich_fontawesome = EXT:weimaranervomhimmelreich/Resources/Public/Css/font-awesome.min.css
+        weimaranervomhimmelreich_bootstrap = EXT:weimaranervomhimmelreich/Resources/Public/Css/bootstrap.css
+        weimaranervomhimmelreich_magnific = EXT:weimaranervomhimmelreich/Resources/Public/Css/magnific-popup.css
+        weimaranervomhimmelreich_jqueryui = EXT:weimaranervomhimmelreich/Resources/Public/Css/jquery-ui.css
+        weimaranervomhimmelreich_niceselect = EXT:weimaranervomhimmelreich/Resources/Public/Css/nice-select.css
+        weimaranervomhimmelreich_animate = EXT:weimaranervomhimmelreich/Resources/Public/Css/animate.min.css
+        weimaranervomhimmelreich_owlcarousel = EXT:weimaranervomhimmelreich/Resources/Public/Css/owl.carousel.css
         weimaranervomhimmelreich_layout = EXT:weimaranervomhimmelreich/Resources/Public/Css/main.css
     }
 
@@ -156,11 +166,25 @@ page {
     }
 
     includeJSFooterlibs {
-
+        weimaranervomhimmelreich_jquery = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/vendor/jquery-2.2.4.min.js
+        weimaranervomhimmelreich_bootstrap = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/vendor/bootstrap.min.js
     }
 
     includeJSFooter {
-        weimaranervomhimmelreich_scripts = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/Dist/scripts.js
+        weimaranervomhimmelreich_popper = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/popper.min.js
+        weimaranervomhimmelreich_easing = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/easing.min.js
+        weimaranervomhimmelreich_hoverintent = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/hoverIntent.js
+        weimaranervomhimmelreich_superfish = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/superfish.min.js
+        #weimaranervomhimmelreich_scripts = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.ajaxchimp.min.js
+        weimaranervomhimmelreich_magnific = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.magnific-popup.min.js
+        weimaranervomhimmelreich_tabs = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.tabs.min.js
+        weimaranervomhimmelreich_niceselect = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.nice-select.min.js
+        weimaranervomhimmelreich_isotope = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/isotope.pkgd.min.js
+        weimaranervomhimmelreich_waypoints = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/waypoints.min.js
+        weimaranervomhimmelreich_counterup = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.counterup.min.js
+        weimaranervomhimmelreich_skillbar = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/simple-skillbar.js
+        weimaranervomhimmelreich_owlcarousel = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/owl.carousel.min.js
+        weimaranervomhimmelreich_script = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/main.js
     }
 }
 
