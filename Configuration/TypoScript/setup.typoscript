@@ -66,8 +66,8 @@ page {
             }
             20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             20 {
-                levels = 2
-                includeSpacer = 1
+                levels = 3
+                includeSpacer = 0
                 as = mainnavigation
             }
         }
@@ -202,7 +202,10 @@ config {
     removeDefaultJS = {$config.removeDefaultJS}
     inlineStyle2TempFile = 1
     admPanel = {$config.admPanel}
-    debug = 1 # TODO debug, remove when on production
+    // TODO debug, remove when on production
+    debug = 1
+    // contentObjectExceptionHandler = 0
+    // TODO debug, remove when on production
     cache_period = 86400
     sendCacheHeaders = {$config.sendCacheHeaders}
     intTarget =
