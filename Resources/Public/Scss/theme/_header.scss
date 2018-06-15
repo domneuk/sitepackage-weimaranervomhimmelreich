@@ -8,8 +8,13 @@
 --------------------------------------------------------------*/
 
 .main-menu{
-  padding-bottom:20px ;
-  padding-top:20px ;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.main-menu > .row {
+  min-height: 72px;
 }
 
 #header {
@@ -28,6 +33,17 @@
   .main-menu{
     border-color:transparent;
   }
+}
+
+#logo {
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.logo-image {
+  width: auto;
+  height: 100px;
 }
 
 @media(max-width:673px){
@@ -76,7 +92,8 @@
 
 .nav-menu ul ul {
   top: 0;
-  right: 100%;
+  left: 100%;
+  right: auto;
 }
 
 .nav-menu ul li {
@@ -111,12 +128,12 @@
 
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 0 8px 0px 8px;
+  padding: 0 8px;
   text-decoration: none;
   display: inline-block;
   color: $black;
   font-weight:500;  
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   outline: none;
 }
@@ -143,11 +160,11 @@
 }
 
 .nav-menu ul li a {
-  padding: 5px 10px;
+  padding: 10px;
   color: #333;
   transition: 0.3s;
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: none;
 }
 
