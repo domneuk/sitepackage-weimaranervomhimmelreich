@@ -4,16 +4,26 @@
 
 
 .footer-area {
-    background-color: #04091e;
+    background-color: #f2f3f2;
+    color: #55605a;
+    padding-top: 60px;
 }
 
+.footer-second-line {
+    background-color: #cecece;
+    margin-top: 60px;
+    p {
+        margin-top: 1rem;
+    }
+}
 
 .single-footer-widget{
-    h4{
-        color: $white!important;
+    h4 {
+        //color: $white!important;
         margin-bottom: 25px;
         font-weight: 500;
-    }     .form-control{
+    }
+    .form-control {
         border: none;
         width: 80%!important;
         font-weight: 300;
@@ -58,15 +68,15 @@
         }
     }
     .btn{
-       font-size: 1.2rem;
-       border-radius:0;
-       background:$primary-color;
-       color:$white;
-       .lnr{
-        line-height:inherit;
-        font-size:13px;
-        padding: 0px 4px;        
-       }
+        font-size: 1.2rem;
+        border-radius: 0;
+        background: $primary-color;
+        color: $white;
+        .lnr {
+            line-height:inherit;
+            font-size:13px;
+            padding: 0px 4px;
+        }
     }
     ::-moz-selection {
         /* Code for Firefox */
