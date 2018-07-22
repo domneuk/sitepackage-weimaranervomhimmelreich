@@ -1,11 +1,14 @@
 <li class="{f:if(condition: item.active, then:'active')} {f:if(condition: item.children, then:'menu-has-children')}">
     <a href="{item.link}" target="{item.target}" title="{item.title}">
         {item.title}
+        <f:if condition="{subitem} == 1 && {item.data.subtitle}">
+            <span class="subtitle">{item.data.subtitle}</span>
+        </f:if>
     </a>
     <f:if condition="{item.children}">
         <ul>
             <f:for each="{item.children}" as="child">
-                <f:render partial="MenuItem" arguments="{item: child}" />
+                <f:render partial="MenuItem" arguments="{item: child, subitem: 1}" />
             </f:for>
         </ul>
     </f:if>
