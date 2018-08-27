@@ -14,9 +14,14 @@
 					<f:render partial="Header/All" arguments="{_all}" />
 				</f:render>
                 <f:if condition="{data.bodytext}">
-                    <div class="row">
+                    <f:then>
+                        <div class="row">
+                            <f:render section="Main" optional="true" />
+                        </div>
+                    </f:then>
+                    <f:else>
                         <f:render section="Main" optional="true" />
-                    </div>
+                    </f:else>
                 </f:if>
 				<f:render section="Footer" optional="true">
 					<f:render partial="Footer/All" arguments="{_all}" />
