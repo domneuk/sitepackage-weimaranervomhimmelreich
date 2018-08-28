@@ -1,6 +1,26 @@
 <f:layout name="Default" />
 <f:section name="Main">
 
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+    <f:if condition="{files}">
+        <f:then></f:then>
+        <f:else>
+            <section class="about-banner">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="about-content col-lg-12">
+                            <h1 class="text-white">{data.title}</h1>
+                            <f:if condition="{data.subtitle}"><p class="text-white link-nav">{data.subtitle}</p></f:if>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </f:else>
+    </f:if>
+
+    <section class="whole-wrap section-gap">
+        <div class="container">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+        </div>
+    </section>
 
 </f:section>

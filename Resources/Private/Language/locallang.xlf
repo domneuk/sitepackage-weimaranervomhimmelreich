@@ -6,6 +6,12 @@
             <authorEmail>domneuk@gmail.com</authorEmail>
         </header>
         <body>
+            <trans-unit id="footer.contact_header">
+                <source>Kontakt</source>
+            </trans-unit>
+            <trans-unit id="footer.nav_header">
+                <source>Navigation</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

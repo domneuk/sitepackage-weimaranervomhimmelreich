@@ -5,9 +5,10 @@
 /*============ Start Blog Home Styles  =============*/
 
 .blog-home-banner {
-    background: url(../img/blog/blog-home-banner.jpg) bottom;
     background-size: cover;
-    padding: 130px 0px;
+    background-position: center;
+    /* padding: 130px 0; */
+    margin-top: 112px;
     .primary-btn {
         border-radius: 0px;
         background: $white;
@@ -31,10 +32,15 @@
 }
 
 .blog-header-content {
+    .blog-home-banner & {
+        padding: 176px 0;
+        margin: 0;
+    }
     h1 {
-        max-width: 500px;
+        max-width: 50%;
         margin-left: auto;
         margin-right: auto;
+        font-size: 6.75rem;
         @media(max-width: 414px) {
             font-size: 30px;
         }

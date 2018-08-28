@@ -70,6 +70,13 @@ page {
                 includeSpacer = 0
                 as = mainnavigation
             }
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
+                special = list
+                special.value = 3,8,9,10
+                includeNotInMenu = 1
+                as = footernavigation
+            }
         }
     }
 

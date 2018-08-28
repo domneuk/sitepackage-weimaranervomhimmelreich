@@ -2598,9 +2598,10 @@ dl.accordion.time-line:before {
 /* =================================== */
 /*============ Start Blog Home Styles  =============*/
 .blog-home-banner {
-  background: url(../img/blog/blog-home-banner.jpg) bottom;
   background-size: cover;
-  padding: 130px 0px; }
+  background-position: center;
+  /* padding: 130px 0; */
+  margin-top: 112px; }
   .blog-home-banner .primary-btn {
     border-radius: 0px;
     background: #fff;
@@ -2621,10 +2622,15 @@ dl.accordion.time-line:before {
 .blog-page {
   background: #f9f9ff; }
 
+.blog-home-banner .blog-header-content {
+  padding: 176px 0;
+  margin: 0; }
+
 .blog-header-content h1 {
-  max-width: 500px;
+  max-width: 50%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  font-size: 6.75rem; }
   @media (max-width: 414px) {
     .blog-header-content h1 {
       font-size: 30px; } }
@@ -3253,7 +3259,7 @@ dl.accordion.time-line:before {
     margin-top: 1rem; }
 
 .single-footer-widget h4 {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-weight: 500; }
 
 .single-footer-widget .logo-image {
@@ -3275,16 +3281,14 @@ dl.accordion.time-line:before {
     box-shadow: none;
     color: #222; }
 
-.single-footer-widget ul li {
-  margin-bottom: 10px; }
-  .single-footer-widget ul li a {
-    color: #777777;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s; }
-    .single-footer-widget ul li a:hover {
-      color: #006633; }
+.single-footer-widget ul li a {
+  color: #777777;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .single-footer-widget ul li a:hover {
+    color: #006633; }
 
 .single-footer-widget .bb-btn {
   color: #006633;

@@ -20,7 +20,7 @@
 .single-footer-widget{
     h4 {
         //color: $white!important;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-weight: 500;
     }
     .logo-image {
@@ -44,7 +44,7 @@
         }
     }
     ul li {
-        margin-bottom: 10px;
+        //margin-bottom: 10px;
         a {
             color: $text-color;
             @include transition();

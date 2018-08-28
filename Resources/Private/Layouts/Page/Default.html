@@ -17,27 +17,7 @@
     </div>
 </header>
 
-<f:if condition="{files}">
-    <f:then></f:then>
-    <f:else>
-        <section class="about-banner">
-            <div class="container">
-                <div class="row d-flex align-items-center justify-content-center">
-                    <div class="about-content col-lg-12">
-                        <h1 class="text-white">{data.title}</h1>
-                        <f:if condition="{data.subtitle}"><p class="text-white link-nav">{data.subtitle}</p></f:if>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </f:else>
-</f:if>
-
-<section class="whole-wrap section-gap">
-    <div class="container">
-        <f:render section="Main" />
-    </div>
-</section>
+<f:render section="Main" />
 
 <footer class="footer-area">
     <div class="container">
@@ -49,6 +29,7 @@
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 flex-self-center flex">
                 <div class="single-footer-widget">
+                    <h4>{f:translate(key: 'LLL:EXT:weimaranervomhimmelreich/Resources/Private/Language/locallang.xlf:footer.contact_header')}</h4>
                     <p>
                         Robert & Philip Glorian<br>
                         Ellwangerstraße 73<br>
@@ -59,13 +40,13 @@
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 social-widget">
                 <div class="single-footer-widget">
-                    <h4>Follow Me</h4>
-                    <p>Let us be social</p>
-                    <div class="footer-social d-flex align-items-center">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
+                    <h4>{f:translate(key: 'LLL:EXT:weimaranervomhimmelreich/Resources/Private/Language/locallang.xlf:footer.nav_header')}</h4>
+                    <div class="d-flex align-items-center">
+                        <ul>
+                            <f:for each="{footernavigation}" as="footerNavigationItem">
+                                <f:render partial="FooterMenuItem" arguments="{item: footerNavigationItem}" />
+                            </f:for>
+                        </ul>
                     </div>
                 </div>
             </div>
