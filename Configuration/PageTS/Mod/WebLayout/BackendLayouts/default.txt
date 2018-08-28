@@ -22,7 +22,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:weimaranervomhimmelreich/Resources/Public/Images/BackendLayouts/default.png
+                icon = EXT:weimaranervomhimmelreich/Resources/Public/Images/BackendLayouts/default.svg
             }
         }
     }
