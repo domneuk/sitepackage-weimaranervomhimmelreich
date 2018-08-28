@@ -10,7 +10,7 @@
                     <section class="banner-area relative blog-home-banner" style="background-image:url('{f:uri.image(image:files.0)}')">
                         <div class="d-flex align-items-center justify-content-center">
                             <div class="about-content blog-header-content col-lg-12">
-                                <h1 class="text-white">{data.subtitle}</h1>
+                                <f:if condition="{data.subtitle}"><h1 class="text-white">{data.subtitle}</h1></f:if>
                             </div>
                         </div>
                     </section>

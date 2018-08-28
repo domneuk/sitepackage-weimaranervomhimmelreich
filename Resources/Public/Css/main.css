@@ -2600,10 +2600,9 @@ dl.accordion.time-line:before {
 .blog-home-banner {
   background-size: cover;
   background-position: center;
-  /* padding: 130px 0; */
   margin-top: 112px; }
   .blog-home-banner .primary-btn {
-    border-radius: 0px;
+    border-radius: 0;
     background: #fff;
     color: #222;
     font-weight: 600;
@@ -2623,20 +2622,23 @@ dl.accordion.time-line:before {
   background: #f9f9ff; }
 
 .blog-home-banner .blog-header-content {
-  padding: 176px 0;
+  /* padding: 176px 0; */
   margin: 0; }
+  @media (max-width: 414px) {
+    .blog-home-banner .blog-header-content {
+      padding: 80px 0; } }
 
 .blog-header-content h1 {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 6.75rem; }
+  font-size: 5rem; }
   @media (max-width: 414px) {
     .blog-header-content h1 {
       font-size: 30px; } }
 
 .blog-header-content p {
-  margin: 20px 0px; }
+  margin: 20px 0; }
 
 .top-category-widget-area {
   background-color: #f9f9ff; }
