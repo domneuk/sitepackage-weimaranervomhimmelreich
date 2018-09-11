@@ -8,6 +8,7 @@
 #### HELPER ####
 ################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/CountContent.typoscript">
 
 
 ##############
