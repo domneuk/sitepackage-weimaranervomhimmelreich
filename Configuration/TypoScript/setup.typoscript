@@ -156,7 +156,8 @@ page {
 
     includeCSS {
         weimaranervomhimmelreich_linearicons = EXT:weimaranervomhimmelreich/Resources/Public/Css/linearicons.css
-        weimaranervomhimmelreich_magnific = EXT:weimaranervomhimmelreich/Resources/Public/Css/magnific-popup.css
+        #weimaranervomhimmelreich_magnific = EXT:weimaranervomhimmelreich/Resources/Public/Css/magnific-popup.css
+        weimaranervomhimmelreich_photoswipe = EXT:weimaranervomhimmelreich/Resources/Public/Css/photoswipe.css
         weimaranervomhimmelreich_niceselect = EXT:weimaranervomhimmelreich/Resources/Public/Css/nice-select.css
         weimaranervomhimmelreich_animate = EXT:weimaranervomhimmelreich/Resources/Public/Css/animate.min.css
         weimaranervomhimmelreich_owlcarousel = EXT:weimaranervomhimmelreich/Resources/Public/Css/owl.carousel.css
@@ -181,7 +182,8 @@ page {
         weimaranervomhimmelreich_easing = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/easing.min.js
         weimaranervomhimmelreich_hoverintent = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/hoverIntent.js
         weimaranervomhimmelreich_superfish = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/superfish.min.js
-        weimaranervomhimmelreich_magnific = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.magnific-popup.min.js
+        #weimaranervomhimmelreich_magnific = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.magnific-popup.min.js
+        weimaranervomhimmelreich_photoswipe = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/photoswipe.min.js
         weimaranervomhimmelreich_tabs = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.tabs.min.js
         weimaranervomhimmelreich_niceselect = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.nice-select.min.js
         weimaranervomhimmelreich_isotope = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/isotope.pkgd.min.js
