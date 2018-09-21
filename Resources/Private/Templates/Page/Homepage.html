@@ -2,20 +2,14 @@
 <f:section name="Main">
     <f:if condition="{files}">
         <f:then>
-            <f:if condition="{files -> f:count()} > 1">
-                <f:then>
-                    MUTIPLE
-                </f:then>
-                <f:else>
-                    <section class="banner-area relative blog-home-banner" style="background-image:url('{f:uri.image(image:files.0)}')">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <div class="about-content blog-header-content col-lg-12">
-                                <f:if condition="{data.subtitle}"><h1 class="text-white">{data.subtitle}</h1></f:if>
-                            </div>
-                        </div>
-                    </section>
-                </f:else>
-            </f:if>
+            <section class="banner-area relative">
+                <f:if condition="{data.subtitle}"><h1 class="blog-header-content text-white">{data.subtitle}</h1></f:if>
+                <div class="image-section {f:if(condition:'{files -> f:count()} > 1',then:'banner-carousel owl-carousel')}">
+                <f:for each="{files}" as="file">
+                    <div class="blog-home-banner" style="background-image: url('{f:uri.image(image:file,maxWidth:1440)}')"></div>
+                </f:for>
+                </div>
+            </section>
         </f:then>
         <f:else>
             <section class="about-banner">

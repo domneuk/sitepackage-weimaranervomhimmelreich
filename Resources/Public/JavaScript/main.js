@@ -142,6 +142,13 @@ $(document).ready(function () {
 
     //------- Owl Carusel  js --------//  
 
+    $('.banner-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        dots: true,
+        nav: true
+    });
+
     $('.active-review-carusel').owlCarousel({
         items: 1,
         loop: true,
@@ -307,7 +314,7 @@ $(document).ready(function () {
 
         // Account for home page with empty path
         if (path == '') {
-            path = 'index.html';
+            path = '/';
         }
 
         var target = $('nav a[href="' + path + '"]');

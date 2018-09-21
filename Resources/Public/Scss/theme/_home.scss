@@ -120,8 +120,13 @@
 
 .banner-area {
     background:$offwhite;
+    margin-top: 112px;
     .fullscreen {
         height: 750px !important;
+    }
+    .image-section {
+        max-height: calc(100vh - 112px);
+        overflow: hidden;
     }
 }
 
@@ -162,8 +167,6 @@
         display:block;
     }
 }
-
-
 
 /*-------- End Banner Area ------------*/
 
