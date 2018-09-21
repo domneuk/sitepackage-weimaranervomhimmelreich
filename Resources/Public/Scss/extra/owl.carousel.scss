@@ -1,0 +1,45 @@
+.owl-stage-outer { max-height: calc(100vh - 112px); }
+
+.owl-nav, .owl-dots {
+  position: absolute;
+}
+
+.owl-nav {
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  font-size: 72px;
+  color: #fff;
+}
+
+.owl-dots {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.owl-carousel button.owl-dot {
+  border-radius: 50%;
+  background: rgba(160, 160, 160, 0.6);
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.active {
+    span {
+      border-radius: 50%;
+      background: white;
+      width: 9px;
+      height: 9px;
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+  }
+}
