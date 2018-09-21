@@ -1,6 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{gallery.rows}">
-	<div class="row ce-gallery{f:if(condition: data.imageborder, then: ' ce-border')}" data-ce-columns="{gallery.count.columns}" data-ce-images="{gallery.count.files}">
+	<div class="row ce-gallery ce-image-gallery{f:if(condition: data.imageborder, then: ' ce-border')}" data-ce-columns="{gallery.count.columns}" data-ce-images="{gallery.count.files}">
 		<f:if condition="{gallery.position.horizontal} == 'center'">
 			<div class="ce-outer">
 				<div class="ce-inner">
@@ -26,16 +26,16 @@
                 <f:if condition="{column.media}">
                     <f:if condition="{column.media.link}">
                         <f:then>
-                            <f:link.typolink parameter="{column.media.link}" title="{column.media.title}">
+                            <f:link.typolink parameter="{column.media.link}" title="{column.media.title}" additionalAttributes="{data-size:'{column.dimensions.width}x{column.dimensions.height}'}">
                                 <f:render partial="Media/Rendering/GalleryImage" arguments="{file: column.media, dimensions: column.dimensions, settings: settings}" />
                             </f:link.typolink>
                         </f:then>
                         <f:else>
                             <f:if condition="{data.image_zoom}">
                                 <f:then>
-                                    <ce:link.clickEnlarge image="{column.media}" configuration="{settings.media.popup}">
+                                    <a href="{f:uri.image(image:column.media)}" data-size="{column.dimensions.width}x{column.dimensions.height}">
                                         <f:render partial="Media/Rendering/GalleryImage" arguments="{file: column.media, dimensions: column.dimensions, settings: settings}" />
-                                    </ce:link.clickEnlarge>
+                                    </a>
                                 </f:then>
                                 <f:else>
                                     <f:render partial="Media/Rendering/GalleryImage" arguments="{file: column.media, dimensions: column.dimensions, settings: settings}" />

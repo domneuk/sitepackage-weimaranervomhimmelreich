@@ -489,7 +489,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             item;
 
         for(var i = 0; i < numNodes; i++) {
-            el = thumbElements[i];
+            el = thumbElements[i].childNodes[0];
 
             // include only element nodes
             if(el.nodeType !== 1) {
@@ -560,19 +560,20 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             return;
         }
 
-        var clickedGallery = clickedListItem.parentNode;
+        var clickedGallery = clickedListItem.parentNode.parentNode;
 
-        var childNodes = clickedListItem.parentNode.childNodes,
+        var childNodes = clickedGallery.childNodes,
             numChildNodes = childNodes.length,
             nodeIndex = 0,
             index;
 
         for (var i = 0; i < numChildNodes; i++) {
-            if(childNodes[i].nodeType !== 1) {
+            var childNode = childNodes[i].childNodes[0];
+            if(childNode.nodeType !== 1) {
                 continue;
             }
 
-            if(childNodes[i] === clickedListItem) {
+            if(childNode === clickedListItem) {
                 index = nodeIndex;
                 break;
             }
@@ -763,4 +764,4 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
     }
 };
 
-initPhotoSwipeFromDOM('.demo-gallery');
+initPhotoSwipeFromDOM('.ce-image-gallery');

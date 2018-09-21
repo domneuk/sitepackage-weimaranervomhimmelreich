@@ -3429,3 +3429,6 @@ dl.accordion.time-line:before {
     height: 9px;
     display: inline-block;
     margin-bottom: 3px; }
+
+.pswp__bg {
+  background: rgba(0, 0, 0, 0.88); }
