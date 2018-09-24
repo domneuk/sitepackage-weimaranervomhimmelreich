@@ -26,14 +26,14 @@
                 <f:if condition="{column.media}">
                     <f:if condition="{column.media.link}">
                         <f:then>
-                            <f:link.typolink parameter="{column.media.link}" title="{column.media.title}" additionalAttributes="{data-size:'{column.dimensions.width}x{column.dimensions.height}'}">
+                            <f:link.typolink parameter="{column.media.link}" title="{column.media.title}">
                                 <f:render partial="Media/Rendering/GalleryImage" arguments="{file: column.media, dimensions: column.dimensions, settings: settings}" />
                             </f:link.typolink>
                         </f:then>
                         <f:else>
                             <f:if condition="{data.image_zoom}">
                                 <f:then>
-                                    <a href="{f:uri.image(image:column.media)}" data-size="{column.dimensions.width}x{column.dimensions.height}">
+                                    <a href="{f:uri.image(image:column.media,maxHeight:1080)}">
                                         <f:render partial="Media/Rendering/GalleryImage" arguments="{file: column.media, dimensions: column.dimensions, settings: settings}" />
                                     </a>
                                 </f:then>
