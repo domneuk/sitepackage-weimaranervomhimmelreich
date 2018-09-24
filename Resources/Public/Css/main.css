@@ -1329,8 +1329,20 @@ h4, h5, h6 {
       cursor: pointer;
       border: 1px solid #f1f1f1; }
     .primary-checkbox input:checked + label {
-      background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+      background: #006633;
       border: none; }
+      .primary-checkbox input:checked + label:before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 10px;
+        left: 5px;
+        top: 2px;
+        position: relative;
+        transform: rotate(45deg);
+        border: 3px solid #fff;
+        border-top: none;
+        border-left: none; }
 
 .confirm-checkbox {
   width: 16px;
@@ -1360,7 +1372,7 @@ h4, h5, h6 {
       cursor: pointer;
       border: 1px solid #f1f1f1; }
     .confirm-checkbox input:checked + label {
-      background: url(../img/elements/success-check.png) no-repeat center center/cover;
+      background: url(../Images/success-check.png) no-repeat center center/cover;
       border: none; }
 
 .disabled-checkbox {
@@ -1394,7 +1406,7 @@ h4, h5, h6 {
       cursor: not-allowed;
       z-index: 3; }
     .disabled-checkbox input:checked + label {
-      background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+      background: url(../Images/disabled-check.png) no-repeat center center/cover;
       border: none; }
 
 .primary-radio {
@@ -1425,7 +1437,7 @@ h4, h5, h6 {
       cursor: pointer;
       border: 1px solid #f1f1f1; }
     .primary-radio input:checked + label {
-      background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+      background: url(../Images/primary-radio.png) no-repeat center center/cover;
       border: none; }
 
 .confirm-radio {
@@ -1456,7 +1468,7 @@ h4, h5, h6 {
       cursor: pointer;
       border: 1px solid #f1f1f1; }
     .confirm-radio input:checked + label {
-      background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+      background: url(../Images/success-radio.png) no-repeat center center/cover;
       border: none; }
 
 .disabled-radio {
@@ -1490,7 +1502,7 @@ h4, h5, h6 {
       cursor: not-allowed;
       z-index: 3; }
     .disabled-radio input:checked + label {
-      background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+      background: url(../Images/disabled-radio.png) no-repeat center center/cover;
       border: none; }
 
 .default-select {
@@ -3225,30 +3237,6 @@ dl.accordion.time-line:before {
     margin-bottom: 30px; }
     .contact-page-area .contact-btns:hover {
       color: #fff; }
-  .contact-page-area .form-area .form-control:focus {
-    box-shadow: none !important;
-    border-color: #ced4da !important; }
-  .contact-page-area .form-area input {
-    padding: 15px; }
-  .contact-page-area .form-area input,
-  .contact-page-area .form-area textarea {
-    border-radius: 0;
-    font-size: 13px !important; }
-  .contact-page-area .form-area textarea {
-    height: 190px;
-    margin-top: 0px;
-    padding: 15px; }
-  .contact-page-area .form-area .genric-btn {
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    border-radius: 0 !important;
-    font-size: 14px;
-    text-transform: uppercase !important; }
-    .contact-page-area .form-area .genric-btn:hover {
-      border: 1px solid #006633;
-      color: #006633 !important; }
   @media (max-width: 991px) {
     .contact-page-area .address-wrap {
       margin-bottom: 30px; } }
@@ -3263,6 +3251,35 @@ dl.accordion.time-line:before {
       font-weight: 500;
       color: #006633;
       margin-right: 30px; }
+
+.form-area .form-control:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important; }
+
+.form-area input {
+  padding: 15px; }
+
+.form-area input,
+.form-area textarea {
+  border-radius: 0;
+  font-size: 13px !important; }
+
+.form-area textarea {
+  height: 190px;
+  margin-top: 0;
+  padding: 15px; }
+
+.form-area .genric-btn {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 0 !important;
+  font-size: 14px;
+  text-transform: uppercase !important; }
+  .form-area .genric-btn:hover {
+    border: 1px solid #006633;
+    color: #006633 !important; }
 
 /* =================================== */
 /*  Footer Styles

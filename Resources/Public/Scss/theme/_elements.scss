@@ -811,8 +811,21 @@ h1, h2, h3, h4, h5, h6 {
 		}
 		&:checked {
 			+ label {
-				background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+				background: $primary-color;
 				border: none;
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 6px;
+                    height: 10px;
+                    left: 5px;
+                    top: 2px;
+                    position: relative;
+                    transform: rotate(45deg);
+                    border: 3px solid $white;
+                    border-top: none;
+                    border-left: none;
+                }
 			}
 		}
 	}
@@ -848,7 +861,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 		&:checked {
 			+ label {
-				background: url(../img/elements/success-check.png) no-repeat center center/cover;
+				background: url(../Images/success-check.png) no-repeat center center/cover;
 				border: none;
 			}
 		}
@@ -888,7 +901,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 		&:checked {
 			+ label {
-				background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+				background: url(../Images/disabled-check.png) no-repeat center center/cover;
 				border: none;
 			}
 		}
@@ -924,7 +937,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 		&:checked {
 			+ label {
-				background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+				background: url(../Images/primary-radio.png) no-repeat center center/cover;
 				border: none;
 			}
 		}
@@ -960,7 +973,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 		&:checked {
 			+ label {
-				background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+				background: url(../Images/success-radio.png) no-repeat center center/cover;
 				border: none;
 			}
 		}
@@ -1000,7 +1013,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 		&:checked {
 			+ label {
-				background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+				background: url(../Images/disabled-radio.png) no-repeat center center/cover;
 				border: none;
 			}
 		}

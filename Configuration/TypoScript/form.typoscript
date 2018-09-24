@@ -1,0 +1,23 @@
+plugin.tx_form {
+    settings {
+        formDefinitionOverrides {
+            kontaktformular {
+                renderables {
+                    0 {
+                        renderables {
+                            4 {
+                                label = TEXT
+                                label.value = Datenschutzerklärung
+                                label.typolink.parameter = 10#c74
+                                label.typolink.wrap = Hiermit willige ich in die Verarbeitung meiner angegebenen Daten ein, um auf meine Anfrage, eine Antwort zu erhalten. Darüberhinaus bestätige ich, die&#32;|&#32;gelesen und akzeptiert zu haben.
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        yamlConfigurations {
+            100 = EXT:weimaranervomhimmelreich/Configuration/Yaml/ContactFormSetup.yaml
+        }
+    }
+}
