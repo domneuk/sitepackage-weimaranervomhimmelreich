@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'Private\\Weimaranervomhimmelreich\\' => 'Classes'
+            'Domneuk\\Weimaranervomhimmelreich\\' => 'Classes'
         ],
     ],
     'state' => 'stable',
@@ -27,6 +27,6 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 1,
     'author' => 'Dominik Neukamm',
     'author_email' => 'domneuk@gmail.com',
-    'author_company' => 'Private',
-    'version' => '1.0.0',
+    'author_company' => 'Domneuk',
+    'version' => '1.1.0',
 ];
