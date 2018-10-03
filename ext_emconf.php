@@ -11,7 +11,10 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.7.0-9.5.99',
             'fluid_styled_content' => '8.7.0-9.5.99',
-            'rte_ckeditor' => '8.7.0-9.5.99'
+            'rte_ckeditor' => '8.7.0-9.5.99',
+            'form' => '8.7.0-9.5.99',
+            'news' => '8.7.0-9.5.99',
+            'cookiebanner' => '8.7.0-9.5.99',
         ],
         'conflicts' => [
         ],
@@ -28,5 +31,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Dominik Neukamm',
     'author_email' => 'domneuk@gmail.com',
     'author_company' => 'Domneuk',
-    'version' => '1.1.0',
+    'version' => '1.2.0',
 ];

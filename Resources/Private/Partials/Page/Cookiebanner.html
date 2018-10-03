@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+<script>
+    var cookieOptions = <f:format.raw>{</f:format.raw>
+        palette: <f:format.raw>{</f:format.raw>
+            popup: <f:format.raw>{</f:format.raw>
+                background: "{colorBG}",
+                text: "{colorText}"
+            },
+            button: <f:format.raw>{</f:format.raw>
+                background: "{colorButton}",
+                text: "{colorTextButton}"
+            }
+        },
+        content: <f:format.raw>{</f:format.raw>
+            message: "{bannerText}",
+            dismiss: "{dismissText}",
+            link: "{moreText}",
+            href: "{moreLink -> f:uri.page(pageUid: moreLink)}"
+        },
+        position: "{bannerPosition}",
+        theme: "{bannerLayout}"
+    };
+    window.addEventListener("load",function() <f:format.raw>{</f:format.raw>
+        window.cookieconsent.initialise(cookieOptions)
+    });
+</script>
+</html>

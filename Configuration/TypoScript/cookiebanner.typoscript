@@ -1,0 +1,26 @@
+page.footerData.14338 = FLUIDTEMPLATE
+page.footerData.14338 {
+    file = EXT:weimaranervomhimmelreich/Resources/Private/Partials/Page/Cookiebanner.html
+    variables {
+        colorBG = TEXT
+        colorBG.value = {$cookiebanner.colorBG}
+        colorText = TEXT
+        colorText.value = {$cookiebanner.colorText}
+        colorButton = TEXT
+        colorButton.value = {$cookiebanner.colorButton}
+        colorTextButton = TEXT
+        colorTextButton.value = {$cookiebanner.colorTextButton}
+        bannerText = TEXT
+        bannerText.value = {$cookiebanner.bannerText}
+        dismissText = TEXT
+        dismissText.value = {$cookiebanner.dismissText}
+        moreText = TEXT
+        moreText.value = {$cookiebanner.moreText}
+        moreLink = TEXT
+        moreLink.value = {$cookiebanner.moreLink}
+        bannerPosition = TEXT
+        bannerPosition.value = {$cookiebanner.bannerPosition}
+        bannerLayout = TEXT
+        bannerLayout.value = {$cookiebanner.bannerLayout}
+    }
+}
