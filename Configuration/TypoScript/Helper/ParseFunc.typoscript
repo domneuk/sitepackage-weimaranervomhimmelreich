@@ -1,0 +1,21 @@
+lib.parseFunc_RTE {
+    externalBlocks {
+        ul {
+            stdWrap {
+                HTMLparser = 1
+                HTMLparser {
+                    tags {
+                        ul {
+                            fixAttrib {
+                                class {
+                                    default = unordered-list
+                                }
+                            }
+                        }
+                    }
+                    keepNonMatchedTags = 1
+                }
+            }
+        }
+    }
+}

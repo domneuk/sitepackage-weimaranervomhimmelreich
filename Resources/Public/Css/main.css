@@ -1027,18 +1027,25 @@ h4, h5, h6 {
 
 .unordered-list li {
   position: relative;
-  padding-left: 30px;
-  line-height: 1.82em !important; }
+  line-height: 1.82em !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
   .unordered-list li:before {
     content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border: 3px solid #006633;
     background: #fff;
-    top: 4px;
-    left: 0;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 12px; }
 
 .ordered-list {
   margin-left: 30px; }
@@ -3424,6 +3431,9 @@ dl.accordion.time-line:before {
   color: #006633; }
 
 /*-------- end footer Area -------------*/
+.ce-bodytext ul {
+  margin-bottom: 1rem; }
+
 .owl-stage-outer {
   max-height: calc(100vh - 112px); }
 
