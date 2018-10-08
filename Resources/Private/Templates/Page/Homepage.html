@@ -1,5 +1,6 @@
 <f:layout name="Default" />
 <f:section name="Main">
+
     <f:if condition="{files}">
         <f:then>
             <section class="banner-area relative">
@@ -24,16 +25,18 @@
             </section>
         </f:else>
     </f:if>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" /></div>
-            <div class="col-lg-4">
-                <div class="mt-50 widget-wrap">
-                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}" />
+
+    <section class="pt-90 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" /></div>
+                <div class="col-lg-4">
+                    <div class="mt-50 widget-wrap">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 </f:section>
