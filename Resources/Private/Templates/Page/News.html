@@ -1,0 +1,33 @@
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <f:if condition="{files}">
+        <f:then></f:then>
+        <f:else>
+            <section class="about-banner">
+                <div class="container">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="about-content col-lg-12">
+                            <h1 class="text-white">{data.title}</h1>
+                            <f:if condition="{data.subtitle}"><p class="text-white link-nav">{data.subtitle}</p></f:if>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </f:else>
+    </f:if>
+
+    <section class="pt-90 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" /></div>
+                <div class="col-lg-5">
+                    <div class="mt-50 widget-wrap">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</f:section>
