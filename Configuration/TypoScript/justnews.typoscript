@@ -1,0 +1,11 @@
+lib.contentElement {
+    templateRootPaths {
+        40 = EXT:weimaranervomhimmelreich/Resources/Private/Templates/ContentElements/JustNews
+    }
+    partialRootPaths {
+        40 = EXT:weimaranervomhimmelreich/Resources/Private/Partials/ContentElements/JustNews
+    }
+    layoutRootPaths {
+        #40 = EXT:weimaranervomhimmelreich/Resources/Private/Layouts/ContentElements/JustNews
+    }
+}
