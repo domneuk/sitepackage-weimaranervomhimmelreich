@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <dl class="accordion">
+    <f:for each="{menuPages}" as="menuPage" iteration="pageIterator">
+        <f:debug>{menuPage}</f:debug>
+        <dt>
+            <a href="" class="{f:if(condition:pageIterator.isFirst,then:'active')}">{menuPage.title}</a>
+        </dt>
+        <dd>
+            <f:if condition="{menu}">
+                <ul>
+                    <f:for each="{menu}" as="page">
+                        <f:if condition="{page.data.pid} === {menuPage.data.uid}">
+                            <f:then>
+                                <li>
+                                    <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">
+                                    <span>{page.title}</span>
+                                    </a>
+                                </li>
+                            </f:then>
+                        </f:if>
+                    </f:for>
+                </ul>
+            </f:if>
+        </dd>
+    </f:for>
+    </dl>
+
+</f:section>
+</html>

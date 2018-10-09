@@ -20,6 +20,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/form.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/cookiebanner.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/justnews.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/dsgvo.typoscript">
 
 
 ##############
@@ -244,8 +245,3 @@ config {
     concatenateJs = 0
     concatenateCss = 0
 }
-
-// robots noindex und nofollow für impressum und datenschutz
-[globalVar = TSFE:id = 9|10]
-  page.meta.robots = noindex, nofollow
-[global]

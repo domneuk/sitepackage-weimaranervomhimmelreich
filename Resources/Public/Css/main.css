@@ -2499,6 +2499,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* =================================== */
 /*  Pricing Page Styles
 /* =================================== */
+.widget-wrap .accordion {
+  padding: 0 1rem; }
+
 .accordion > dt {
   margin-bottom: 10px;
   font-size: 14px;
@@ -2509,7 +2512,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   color: #222222;
   text-decoration: none;
-  padding: 8px 30px;
+  padding: 2px 30px;
   font-size: 16px;
   font-weight: 500;
   background: #fafcff; }
@@ -2563,9 +2566,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #777; }
 
 .accordion > dt > a,
-.accordion > dt > a:after,
-.toggle > dt > a,
-.toggle > dt > a:after {
+.accordion > dt > a:after {
   -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
@@ -2630,6 +2631,14 @@ dl.accordion.time-line:before {
 .accordion.time-line > dt > a:hover,
 .accordion.time-line > dt > a.active {
   background: none !important; }
+
+.toggle > dt > a,
+.toggle > dt > a:after {
+  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1); }
 
 /* =================================== */
 /*  Blog Styles

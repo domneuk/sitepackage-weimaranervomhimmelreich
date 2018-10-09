@@ -2,36 +2,40 @@
 /*  Pricing Page Styles
 /* =================================== */
 
-    .accordion > dt {
+.accordion {
+    .widget-wrap & {
+        padding: 0 1rem;
+    }
+    > dt {
         margin-bottom: 10px;
         font-size: 14px;
         font-weight: 400;
     }
-    .accordion > dt > a {
+    > dt > a {
         display: block;
         position: relative;
         color: #222222;
         text-decoration: none;
-        padding: 8px 30px;
-        font-size:16px;
-        font-weight:500;
+        padding: 2px 30px;
+        font-size: 16px;
+        font-weight: 500;
         background: #fafcff;
-        @media(max-width:414px){
-            font-size:12px;
+        @media(max-width: 414px) {
+            font-size: 12px;
         }
     }
-    .accordion > dt > a:hover {
+    > dt > a:hover {
         text-decoration: none;
     }
-    .accordion > dt > a.active {
+    > dt > a.active {
         color: $primary-color;
         border-color: #ddd;
         cursor: default;
-        border-bottom:1px solid $primary-color;
-        background:transparent;
+        border-bottom: 1px solid $primary-color;
+        background: transparent;
     }
 
-    .accordion > dt > a:after {
+    > dt > a:after {
         content: "\f107";
         width: 15px;
         height: 15px;
@@ -51,35 +55,33 @@
         color: $black;
         -webkit-font-smoothing: antialiased;
     }
-    .accordion > dt > a.active:after,
-    .accordion > dt > a.active:hover:after {
+    > dt > a.active:after,
+    > dt > a.active:hover:after {
         content: "\f106";
         color: $primary-color;
     }
-    .accordion > dt > a:hover:after {
+    > dt > a:hover:after {
         color: #444;
     }
-    .accordion > dd {
+    > dd {
         margin-bottom: 10px;
         padding: 10px 20px 20px;
         font-size: 14px;
         line-height: 1.8;
         color: #777;
     }
-    .accordion > dt > a,
-    .accordion > dt > a:after,
-    .toggle > dt > a,
-    .toggle > dt > a:after {
+    > dt > a,
+    > dt > a:after {
         -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     }
-    dl.accordion.time-line {
+    @at-root dl#{&}.time-line {
         position: relative;
     }
-    dl.accordion.time-line:before {
+    @at-root dl#{&}.time-line:before {
         border-left: 1px dashed #cecece;
         bottom: 10px;
         content: "";
@@ -88,14 +90,14 @@
         top: 25px;
         z-index: 0;
     }
-    .accordion.time-line > dd {
+    &.time-line > dd {
         margin-bottom: 10px;
         padding: 10px 20px 20px 40px;
         font-size: 14px;
         line-height: 1.8;
         color: #777;
     }
-    .accordion.time-line > dt > a:after {
+    &.time-line > dt > a:after {
         content: "\e648";
         width: 30px;
         height: 30px;
@@ -117,12 +119,12 @@
         background: #222;
         padding-left: 3px;
     }
-    .accordion.time-line > dt > a.active:after,
-    .accordion.time-line > dt > a.active:hover:after {
+    &.time-line > dt > a.active:after,
+    &.time-line > dt > a.active:hover:after {
         content: "\e641";
         color: #fff;
     }
-    .accordion.time-line > dt > a {
+    &.time-line > dt > a {
         display: block;
         position: relative;
         color: #222222;
@@ -131,10 +133,17 @@
         border: none;
         letter-spacing: 3px;
     }
-    .accordion.time-line > dt > a:hover,
-    .accordion.time-line > dt > a.active {
+    &.time-line > dt > a:hover,
+    &.time-line > dt > a.active {
         background: none !important;
     }
+}
 
-
-
+.toggle > dt > a,
+.toggle > dt > a:after {
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}

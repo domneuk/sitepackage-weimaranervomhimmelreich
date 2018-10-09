@@ -21,6 +21,9 @@
             <trans-unit id="backend_layout.column.right">
                 <source>Rechts</source>
             </trans-unit>
+            <trans-unit id="CType.news_menu_subpages">
+                <source>Accordion News</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

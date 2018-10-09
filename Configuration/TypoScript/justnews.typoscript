@@ -9,3 +9,18 @@ lib.contentElement {
         #40 = EXT:weimaranervomhimmelreich/Resources/Private/Layouts/ContentElements/JustNews
     }
 }
+
+tt_content.news_menu_subpages =< tt_content.menu_subpages
+tt_content.news_menu_subpages {
+    templateName = NewsMenuSubpages
+    dataProcessing {
+        5 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        5 {
+            special = list
+            special.value.field = pages
+            titleField = nav_title // title
+            includeNotInMenu = 1
+            as = menuPages
+        }
+    }
+}
