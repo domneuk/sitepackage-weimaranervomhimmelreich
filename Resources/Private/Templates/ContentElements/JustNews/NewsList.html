@@ -3,11 +3,22 @@
     <!--TYPO3SEARCH_end-->
 	<f:render partial="Header/All" arguments="{_all}" />
 	<f:if condition="{news -> f:count()} > 0">
-		<ol>
-			<f:for each="{news}" as="newsItem">
-				<f:render partial="NewsItem" arguments="{_all}" />
-			</f:for>
-		</ol>
+        <f:if condition="{data.layout} == 1">
+            <f:then>
+                <f:for each="{news}" as="newsItem">
+                    <div class="div">
+                        <f:render partial="StartpageNewsItem" arguments="{_all}" />
+                    </div>
+                </f:for>
+            </f:then>
+            <f:else>
+                <ol class="news-list">
+                    <f:for each="{news}" as="newsItem">
+                        <f:render partial="NewsItem" arguments="{_all}" />
+                    </f:for>
+                </ol>
+            </f:else>
+        </f:if>
 	</f:if>
     <!--TYPO3SEARCH_start-->
 </div>

@@ -3,7 +3,6 @@
 <f:section name="Main">
     <dl class="accordion">
     <f:for each="{menuPages}" as="menuPage" iteration="pageIterator">
-        <f:debug>{menuPage}</f:debug>
         <dt>
             <a href="" class="{f:if(condition:pageIterator.isFirst,then:'active')}">{menuPage.title}</a>
         </dt>

@@ -104,6 +104,7 @@ figure {
   margin: 0; }
 
 a {
+  color: #006633;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3442,6 +3443,23 @@ dl.accordion.time-line:before {
 /*-------- end footer Area -------------*/
 .ce-bodytext ul {
   margin-bottom: 1rem; }
+
+.news-list li:first-child {
+  margin-top: 0; }
+
+.news-item-date {
+  color: #685731;
+  padding-top: 5px; }
+
+.news-item-day {
+  font-size: 2em;
+  font-weight: 700; }
+
+.news-item-month {
+  font-size: 1.25em; }
+
+.news-item-content p {
+  margin-bottom: 0; }
 
 .owl-stage-outer {
   max-height: calc(100vh - 112px); }

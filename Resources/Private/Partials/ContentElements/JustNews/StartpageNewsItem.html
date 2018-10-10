@@ -1,0 +1,17 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
+<div class="content">
+    <h4>
+        {newsItem.data.lastUpdated -> f:format.date(format:'{settings.list.dateFormat}')}
+    </h4>
+    <h3>
+        <f:link.page pageUid="{newsItem.data.uid}">
+            {newsItem.data.title}
+        </f:link.page>
+    </h3>
+    <p>
+        <f:link.page pageUid="{newsItem.data.uid}">
+            <f:translate key="LLL:EXT:just_news/Resources/Private/Language/locallang.xlf:read_more" />
+        </f:link.page>
+    </p>
+</div>
+</html>

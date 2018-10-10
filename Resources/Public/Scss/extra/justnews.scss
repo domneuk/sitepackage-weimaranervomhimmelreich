@@ -1,0 +1,20 @@
+.news-list {
+  li:first-child { margin-top: 0; }
+}
+
+.news-item {
+  &-date {
+    color: $secondary-color;
+    padding-top: 5px;
+  }
+  &-day {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  &-month {
+    font-size: 1.25em;
+  }
+  &-content {
+    p { margin-bottom: 0; }
+  }
+}
