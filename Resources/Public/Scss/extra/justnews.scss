@@ -17,4 +17,24 @@
   &-content {
     p { margin-bottom: 0; }
   }
+  &-detail-link {
+    color: $secondary-color;
+  }
+}
+
+
+.homepage {
+  .widget-wrap {
+    padding: 20px;
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
 }

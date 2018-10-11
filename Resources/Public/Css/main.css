@@ -2561,7 +2561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .accordion > dd {
   margin-bottom: 10px;
-  padding: 10px 20px 20px;
+  padding: 10px;
   font-size: 14px;
   line-height: 1.8;
   color: #777; }
@@ -2845,7 +2845,7 @@ dl.accordion.time-line:before {
 
 .widget-wrap {
   background: #fafaff;
-  padding: 20px 0px;
+  padding: 20px 0;
   border: 1px solid #eee; }
   @media (max-width: 991px) {
     .widget-wrap {
@@ -3460,6 +3460,19 @@ dl.accordion.time-line:before {
 
 .news-item-content p {
   margin-bottom: 0; }
+
+.news-item-detail-link {
+  color: #685731; }
+
+.homepage .widget-wrap {
+  padding: 20px; }
+  .homepage .widget-wrap h2 {
+    font-size: 24px; }
+  .homepage .widget-wrap h3 {
+    font-size: 18px; }
+  .homepage .widget-wrap h4 {
+    font-size: 13px;
+    font-weight: 400; }
 
 .owl-stage-outer {
   max-height: calc(100vh - 112px); }

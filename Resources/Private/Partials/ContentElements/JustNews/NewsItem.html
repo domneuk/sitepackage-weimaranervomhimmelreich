@@ -18,8 +18,9 @@
         </f:if>
         <p>
             {newsItem.data.abstract -> f:format.nl2br()}<br>
-            <f:link.page pageUid="{newsItem.data.uid}">
-                <f:translate key="LLL:EXT:just_news/Resources/Private/Language/locallang.xlf:read_more" />
+            <f:link.page class="news-item-detail-link" pageUid="{newsItem.data.uid}">
+                <f:translate key="LLL:EXT:just_news/Resources/Private/Language/locallang.xlf:read_more" />&nbsp;
+                <i class="fa fa-arrow-right"></i>
             </f:link.page>
         </p>
     </div>

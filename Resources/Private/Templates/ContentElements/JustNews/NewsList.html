@@ -5,10 +5,8 @@
 	<f:if condition="{news -> f:count()} > 0">
         <f:if condition="{data.layout} == 1">
             <f:then>
-                <f:for each="{news}" as="newsItem">
-                    <div class="div">
-                        <f:render partial="StartpageNewsItem" arguments="{_all}" />
-                    </div>
+                <f:for each="{news}" as="newsItem" iteration="newsIterator">
+                    <f:render partial="StartpageNewsItem" arguments="{_all}" />
                 </f:for>
             </f:then>
             <f:else>

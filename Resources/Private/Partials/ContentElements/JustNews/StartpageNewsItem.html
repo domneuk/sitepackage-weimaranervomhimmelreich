@@ -1,5 +1,5 @@
 <html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
-<div class="content">
+<div class="{f:if(condition: newsIterator.isFirst, else: 'mt-15')}">
     <h4>
         {newsItem.data.lastUpdated -> f:format.date(format:'{settings.list.dateFormat}')}
     </h4>
@@ -8,10 +8,10 @@
             {newsItem.data.title}
         </f:link.page>
     </h3>
-    <p>
+    <f:comment><p>
         <f:link.page pageUid="{newsItem.data.uid}">
             <f:translate key="LLL:EXT:just_news/Resources/Private/Language/locallang.xlf:read_more" />
         </f:link.page>
-    </p>
+    </p></f:comment>
 </div>
 </html>
