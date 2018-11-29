@@ -2,9 +2,16 @@
 <f:layout name="Default" />
 <f:section name="Main">
 
-	<div class="ce-image ce-{gallery.position.horizontal} ce-{gallery.position.vertical}">
-		<f:render partial="Media/GalleryOnly" arguments="{_all}" />
-	</div>
+    <f:if condition="{data.layout} == 1">
+        <f:then>
+            <f:render partial="Media/NewGallery" arguments="{_all}" />
+        </f:then>
+        <f:else>
+            <div class="ce-image ce-{gallery.position.horizontal} ce-{gallery.position.vertical}">
+                <f:render partial="Media/GalleryOnly" arguments="{_all}" />
+            </div>
+        </f:else>
+    </f:if>
 
 </f:section>
 </html>

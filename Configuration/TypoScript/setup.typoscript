@@ -180,7 +180,8 @@ page {
     }
 
     includeJS {
-
+        weimaranervomhimmelreich_ofi = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/ofi.min.js
+        weimaranervomhimmelreich_jquery = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/vendor/jquery-2.2.4.min.js
     }
 
     includeJSFooterlibs {
@@ -201,6 +202,7 @@ page {
         weimaranervomhimmelreich_counterup = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/jquery.counterup.min.js
         weimaranervomhimmelreich_skillbar = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/simple-skillbar.js
         weimaranervomhimmelreich_owlcarousel = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/owl.carousel.min.js
+        weimaranervomhimmelreich_polyfills = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/polyfills.js
         weimaranervomhimmelreich_script = EXT:weimaranervomhimmelreich/Resources/Public/JavaScript/main.js
     }
 }
