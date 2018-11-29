@@ -7,7 +7,14 @@
 		<f:render partial="Media/Type/Video" arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
 	</f:case>
 	<f:defaultCase>
-		<f:render partial="Media/Type/Image" arguments="{file: file, dimensions: dimensions, data: data, settings: settings, isTextpic: isTextpic}" />
+        <f:if condition="{newgallery}">
+            <f:then>
+		        <f:render partial="Media/Type/NewImage" arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
+            </f:then>
+            <f:else>
+		        <f:render partial="Media/Type/Image" arguments="{file: file, dimensions: dimensions, data: data, settings: settings, isTextpic: isTextpic}" />
+            </f:else>
+        </f:if>
 	</f:defaultCase>
 </f:switch>
 </html>
