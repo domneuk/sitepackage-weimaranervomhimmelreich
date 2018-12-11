@@ -15,6 +15,7 @@ $EM_CONF[$_EXTKEY] = [
             'form' => '^9.5.0',
             'cookiebanner' => '^1.2.4',
             'just_news' => '^1.0.3',
+            'mask' => '^4.1.0'
         ],
         'conflicts' => [
         ],
@@ -31,5 +32,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Dominik Neukamm',
     'author_email' => 'domneuk@gmail.com',
     'author_company' => 'Domneuk',
-    'version' => '1.3.7',
+    'version' => '1.3.9',
 ];
