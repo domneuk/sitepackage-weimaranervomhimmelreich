@@ -18,9 +18,11 @@
 }
 
 .owl-dots {
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
+  display: -ms-flex;
+  display: flex;
 }
 
 .owl-carousel button.owl-dot {
@@ -28,7 +30,10 @@
   background: rgba(160, 160, 160, 0.6);
   width: 15px;
   height: 15px;
-  margin-left: 2px;
+  margin-left: 4px;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
   &:first-child {
     margin-left: 0;
   }
@@ -39,7 +44,6 @@
       width: 9px;
       height: 9px;
       display: inline-block;
-      margin-bottom: 3px;
     }
   }
 }
