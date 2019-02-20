@@ -1,0 +1,11 @@
+.ce-gallery {
+  &-left {
+
+  }
+  &-center {
+    .image { text-align: center; }
+  }
+  &-right {
+    .image { text-align: right; }
+  }
+}
