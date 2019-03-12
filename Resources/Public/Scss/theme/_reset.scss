@@ -36,7 +36,7 @@
 body {
     color: $text-color;
     font-family: $primary-font;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.5em;
     position: relative;
@@ -120,7 +120,7 @@ h5, .h5 { font-size: 16px;}
 h6, .h6 { font-size: 14px; color: $title-color;}
 
 td, th {
-    border-radius: 0px;
+    border-radius: 0;
 }
 /**
  * For modern browsers

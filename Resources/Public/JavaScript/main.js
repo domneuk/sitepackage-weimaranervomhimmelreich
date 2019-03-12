@@ -35,7 +35,7 @@ $(document).ready(function () {
         }
     };
 
-    $('.ce-image-gallery, .new-gallery').each(function() {
+    $('.ce-image-gallery').each(function() {
         $(this).magnificPopup(magnificOptions);
     });
 
