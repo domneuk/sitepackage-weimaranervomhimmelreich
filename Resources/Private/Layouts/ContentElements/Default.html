@@ -15,9 +15,9 @@
 				</f:render>
                 <f:if condition="{data.bodytext}">
                     <f:then>
-                        <div class="row">
+                        <f:comment><div class="row"></f:comment>
                             <f:render section="Main" optional="true" />
-                        </div>
+                        <f:comment></div></f:comment>
                     </f:then>
                     <f:else>
                         <f:render section="Main" optional="true" />

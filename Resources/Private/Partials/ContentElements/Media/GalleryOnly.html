@@ -1,28 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{gallery.rows}">
 	<div class="row ce-gallery ce-image-gallery{f:if(condition: data.imageborder, then: ' ce-border')}" data-ce-columns="{gallery.count.columns}" data-ce-images="{gallery.count.files}">
-		<f:if condition="{gallery.position.horizontal} == 'center'">
-			<div class="ce-outer">
-				<div class="ce-inner">
-		</f:if>
 		<f:for each="{gallery.rows}" as="row" iteration="rowIterator">
-            <f:variable name="moduloValue" value="{rowIterator.cycle % 5}" />
-            <f:if condition="{moduloValue} == 4">
-                <f:then>
-                    <div class="col-md-6">
-                </f:then>
-                <f:else>
-                    <f:if condition="{moduloValue} == 0">
-                        <f:then>
-                            <div class="col-md-6">
-                        </f:then>
-                        <f:else>
-                            <div class="col-md-4">
-                        </f:else>
-                    </f:if>
-                </f:else>
-            </f:if>
             <f:for each="{row.columns}" as="column">
+                <div class="col-md-4">
                 <f:if condition="{column.media}">
                     <f:if condition="{column.media.link}">
                         <f:then>
@@ -49,13 +30,9 @@
                         </figcaption>
                     </f:if>
                 </f:if>
+                </div>
             </f:for>
-            </div>
 		</f:for>
-		<f:if condition="{gallery.position.horizontal} == 'center'">
-				</div>
-			</div>
-		</f:if>
 	</div>
 </f:if>
 </html>

@@ -1,25 +1,44 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{gallery.rows}">
-	<div class="col-md-3 ce-gallery{f:if(condition: data.imageborder, then: ' ce-border')}" data-ce-columns="{gallery.count.columns}" data-ce-images="{gallery.count.files}">
-		<f:if condition="{gallery.position.horizontal} == 'center'">
-			<div class="ce-outer">
-				<div class="ce-inner">
-		</f:if>
-		<f:for each="{gallery.rows}" as="row">
-			<div class="ce-row">
-				<f:for each="{row.columns}" as="column">
-					<f:if condition="{column.media}">
-						<div class="ce-column">
-							<f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings, isTextpic: isTextpic}" />
-						</div>
-					</f:if>
-				</f:for>
-			</div>
-		</f:for>
-		<f:if condition="{gallery.position.horizontal} == 'center'">
-				</div>
-			</div>
-		</f:if>
-	</div>
+    <f:if condition="{gallery.position.vertical} == 'above' || {gallery.position.vertical} == 'below'">
+        <f:then>
+            <div class="ce-gallery{f:if(condition: data.imageborder, then: ' ce-border')} ce-gallery-{gallery.position.horizontal}" data-ce-columns="{gallery.count.columns}" data-ce-images="{gallery.count.files}">
+                <f:if condition="{gallery.position.horizontal} == 'center'">
+                    <div class="ce-outer">
+                        <div class="ce-inner">
+                </f:if>
+                <f:for each="{gallery.rows}" as="row">
+                    <div class="row">
+                        <f:for each="{row.columns}" as="column">
+                            <f:if condition="{column.media}">
+                                <div class="col-md-{12 / gallery.count.columns}">
+                                    <f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings, isTextpic: isTextpic}" />
+                                </div>
+                            </f:if>
+                        </f:for>
+                    </div>
+                </f:for>
+                <f:if condition="{gallery.position.horizontal} == 'center'">
+                        </div>
+                    </div>
+                </f:if>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="{f:if(condition: gallery.position.noWrap, then: 'col-md-3')} ce-gallery-{gallery.position.horizontal}">
+                <f:for each="{gallery.rows}" as="row">
+                    <f:for each="{row.columns}" as="column">
+                        <f:if condition="{column.media}">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings, isTextpic: isTextpic}"/>
+                                </div>
+                            </div>
+                        </f:if>
+                    </f:for>
+                </f:for>
+            </div>
+        </f:else>
+    </f:if>
 </f:if>
 </html>
