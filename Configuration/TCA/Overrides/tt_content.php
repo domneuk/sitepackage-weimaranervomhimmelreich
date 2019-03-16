@@ -13,3 +13,5 @@
 );
 
 $GLOBALS['TCA']['tt_content']['types']['news_menu_subpages'] = $GLOBALS['TCA']['tt_content']['types']['menu_subpages'];
+
+$GLOBALS['TCA']['tt_content']['columns']['table_class']['config']['items'][] = ['Wurf-Tabelle', 'wurf-tabelle'];
