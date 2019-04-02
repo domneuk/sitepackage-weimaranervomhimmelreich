@@ -219,7 +219,7 @@
   bottom: 0;
   z-index: 998;
   background: rgba(0, 0, 0, 0.8);
-  left: -260px;
+  right: -260px;
   width: 260px;
   overflow-y: auto;
   transition: 0.4s;
@@ -295,7 +295,7 @@ body.mobile-nav-active {
 }
 
 body.mobile-nav-active #mobile-nav {
-  left: 0;
+  right: 0;
 }
 
 body.mobile-nav-active #mobile-nav-toggle {

@@ -170,6 +170,17 @@ $(document).ready(function () {
         nav: true
     });
 
+    $('.banner-header-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 15000,
+        animateOut: 'fadeOut',
+        dots: true,
+        nav: true
+    });
+
     $('.active-review-carusel').owlCarousel({
         items: 1,
         loop: true,

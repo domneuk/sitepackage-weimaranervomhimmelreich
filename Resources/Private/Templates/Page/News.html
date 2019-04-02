@@ -1,24 +1,32 @@
 <f:layout name="Default" />
 <f:section name="Main">
 
-    <f:if condition="{files}">
-        <f:then></f:then>
-        <f:else>
-            <section class="about-banner">
-                <div class="container">
-                    <div class="row d-flex align-items-center justify-content-center">
-                        <div class="about-content col-lg-12">
-                            <h1 class="text-white">{data.title}</h1>
-                            <f:if condition="{data.subtitle}"><p class="text-white link-nav">{data.subtitle}</p></f:if>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </f:else>
-    </f:if>
-
-    <section class="pt-90 pb-90">
+    <section class="about-banner">
         <div class="container">
+            <f:if condition="{files}">
+                <f:then>
+                    <div class="row d-flex align-items-center justify-content-center{f:if(condition:'{files -> f:count()} > 1',then:' banner-header-carousel owl-carousel')}">
+                        <f:for each="{files}" as="file">
+                            <div class="banner-image" style="background-image: url('{f:uri.image(image:file,maxWidth:1440)}')"></div>
+                        </f:for>
+                    </div>
+                </f:then>
+                <f:else>
+                    <div class="row d-flex align-items-center justify-content-center default-image"
+                         style="background-image:url('{f:uri.image(src: 'EXT:weimaranervomhimmelreich/Resources/Public/Images/ipf.jpg', maxWidth: 1140)}');"></div>
+                </f:else>
+            </f:if>
+        </div>
+    </section>
+
+    <section class="pt-50 pb-90">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center pb-50">
+                <div class="col-lg-12">
+                    <h1>{data.title}</h1>
+                    <f:if condition="{data.subtitle}"><p class="link-nav">{data.subtitle}</p></f:if>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-7"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" /></div>
                 <div class="col-lg-5">

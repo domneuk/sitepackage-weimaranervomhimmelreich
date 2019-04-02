@@ -17,5 +17,10 @@ lib.parseFunc_RTE {
                 }
             }
         }
+        table {
+            stdWrap {
+                wrap = <div class="progress-table-wrap">|</div>
+            }
+        }
     }
 }

@@ -7,6 +7,9 @@
     background-color: #f2f3f2;
     color: #55605a;
     padding-top: 60px;
+    @include media-breakpoint-down(md) {
+        padding-top: 30px;
+    }
 }
 
 .footer-second-line {
@@ -15,9 +18,12 @@
     p {
         margin-top: 1rem;
     }
+    @include media-breakpoint-down(md) {
+        margin-top: 30px;
+    }
 }
 
-.single-footer-widget{
+.single-footer-widget {
     h4 {
         //color: $white!important;
         margin-bottom: 15px;
@@ -120,6 +126,9 @@
         font-weight: 300;
     }
     @include media-breakpoint-down(md) {
+        &.logo {
+            text-align: center;
+        }
         margin-bottom: 30px;
     }
 
