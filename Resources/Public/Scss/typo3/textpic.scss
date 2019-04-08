@@ -17,8 +17,16 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 673px) {
   .ce-gallery {
+    &-left, &-right {
+      .ce-bodytext > & {
+        float: none;
+      }
+      .img-fluid {
+        width: 100%;
+      }
+    }
     &-left {
       .ce-bodytext > & {
         margin-right: 0;
