@@ -46,12 +46,6 @@
   height: 100px;
 }
 
-@media(max-width:673px){
-  #logo{
-      margin-left:20px;
-  }
-}
-
 .nav-menu li:hover > a, .menu-active,  .parent-active > .sf-with-ul{
   color: $primary-color!important;
 }
@@ -198,7 +192,7 @@
 }
 
 #mobile-nav-toggle i {
-  color: $black;
+  color: #444;
   font-weight: 900;
 }
 

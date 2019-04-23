@@ -1,12 +1,12 @@
 <header id="header">
     <div class="container main-menu">
         <div class="row align-items-center justify-content-end d-flex">
-            <div id="logo">
+            <div id="logo" class="col-md-2 col-sm-12">
                 <a href="/">
                     <f:image src="EXT:weimaranervomhimmelreich/Resources/Public/Images/logo_sw.svg" class="logo-image" />
                 </a>
             </div>
-            <nav id="nav-menu-container">
+            <nav id="nav-menu-container" class="col-md-10">
                 <ul class="nav-menu">
                     <f:for each="{mainnavigation}" as="mainnavigationItem">
                         <f:render partial="MenuItem" arguments="{item: mainnavigationItem}" />

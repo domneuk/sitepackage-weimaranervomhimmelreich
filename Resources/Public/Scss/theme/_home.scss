@@ -684,6 +684,9 @@
             margin-top: 112px;
             &.default-image {
                 padding-top: $responsiveImagePercentage;
+                @include media-breakpoint-down(sm) {
+                    padding-top: $responsiveImagePercentageSmall;
+                }
             }
         }
     }
