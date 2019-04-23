@@ -1,6 +1,6 @@
 <html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
 <li class="flex mt-30 news-item">
-    <div class="flex-self-center mr-15 text-center news-item-date">
+    <div class="flex-self-center text-center news-item-date">
         <div class="news-item-day">{newsItem.data.lastUpdated -> f:format.date(format:'d')}</div>
         <div class="news-item-month">{newsItem.data.lastUpdated -> f:format.date(format:'M') -> f:format.case()}</div>
         <div>{newsItem.data.lastUpdated -> f:format.date(format:'Y')}</div>
