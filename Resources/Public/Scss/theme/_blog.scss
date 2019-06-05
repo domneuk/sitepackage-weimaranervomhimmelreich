@@ -7,8 +7,12 @@
 .blog-home-banner {
     width: 100%;
     height: 0;
-    padding-top: 56.25%;
-    background-size: 100%;
+    padding-top: $responsiveImagePercentage;
+    @include media-breakpoint-down(sm) {
+        padding-top: $responsiveImagePercentageSmall;
+    }
+    background-size: cover;
+    background-position: center;
     .primary-btn {
         border-radius: 0;
         background: $white;
@@ -32,7 +36,7 @@
 }
 
 .blog-header-content {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     position: absolute;
     top: 50%;

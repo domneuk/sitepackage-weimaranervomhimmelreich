@@ -118,13 +118,12 @@
 /*-------- Start Banner Area ------------*/
 
 .banner-area {
-    background:$offwhite;
     margin-top: 112px;
+    > .container { padding: 0; }
     .fullscreen {
         height: 750px !important;
     }
     .image-section {
-        max-height: calc(100vh - 112px);
         overflow: hidden;
     }
     @include media-breakpoint-down(md) {
@@ -682,11 +681,12 @@
             background-size: cover;
             background-position: center;
             margin-top: 112px;
-            &.default-image {
-                padding-top: $responsiveImagePercentage;
-                @include media-breakpoint-down(sm) {
-                    padding-top: $responsiveImagePercentageSmall;
-                }
+        }
+        > .default-image {
+            margin-top: 112px;
+            padding-top: $responsiveImagePercentage;
+            @include media-breakpoint-down(sm) {
+                padding-top: $responsiveImagePercentageSmall;
             }
         }
     }

@@ -163,14 +163,7 @@ $(document).ready(function () {
 
     //------- Owl Carusel  js --------//  
 
-    $('.banner-carousel').owlCarousel({
-        items: 1,
-        loop: true,
-        dots: true,
-        nav: true
-    });
-
-    $('.banner-header-carousel').owlCarousel({
+    $('.banner-carousel, .banner-header-carousel').owlCarousel({
         items: 1,
         loop: true,
         autoplay: true,

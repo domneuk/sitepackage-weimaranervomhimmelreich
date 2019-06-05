@@ -4,11 +4,13 @@
     <f:if condition="{files}">
         <f:then>
             <section class="banner-area relative">
-                <f:if condition="{data.subtitle}"><h1 class="blog-header-content text-white">{data.subtitle}</h1></f:if>
-                <div class="image-section {f:if(condition:'{files -> f:count()} > 1',then:'banner-carousel owl-carousel')}">
-                <f:for each="{files}" as="file">
-                    <div class="blog-home-banner" style="background-image: url('{f:uri.image(image:file,maxWidth:1440)}')"></div>
-                </f:for>
+                <div class="container">
+                    <f:if condition="{data.subtitle}"><h1 class="blog-header-content text-white">{data.subtitle}</h1></f:if>
+                    <div class="image-section {f:if(condition:'{files -> f:count()} > 1',then:'banner-carousel owl-carousel')}">
+                    <f:for each="{files}" as="file">
+                        <div class="blog-home-banner" style="background-image: url('{f:uri.image(image:file,maxWidth:1440)}')"></div>
+                    </f:for>
+                    </div>
                 </div>
             </section>
         </f:then>
@@ -26,7 +28,7 @@
         </f:else>
     </f:if>
 
-    <section class="pt-90 pb-90">
+    <section class="pt-70 pb-90">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" /></div>
