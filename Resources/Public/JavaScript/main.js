@@ -168,7 +168,7 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         autoplayHoverPause: true,
-        autoplayTimeout: 15000,
+        autoplayTimeout: 5000,
         animateOut: 'fadeOut',
         dots: true,
         nav: true
