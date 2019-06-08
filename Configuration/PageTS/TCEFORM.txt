@@ -8,4 +8,50 @@ TCEFORM {
     tt_content {
 
     }
+    sys_file_reference.crop.config.cropVariants {
+        default {
+            title = Default desktop
+            selectedRatio = NaN
+            allowedAspectRatios {
+                NaN {
+                    title = Frei
+                    value = 0.0
+                }
+                1:1 {
+                    title = 1:1
+                    value = 1.0
+                }
+                3:2 {
+                    title = 3:2
+                    value = 1.5
+                }
+                2:3 {
+                    title = 2:3
+                    value = 0.6666666667
+                }
+                4:3 {
+                    title = 4:3
+                    value = 1.3333333333
+                }
+                3:4 {
+                    title = 3:4
+                    value = 0.75
+                }
+                16:9 {
+                    title = 16:9
+                    value = 1.7777777778
+                }
+            }
+        }
+        specialWeimaraner {
+            title = Weimaraner Varianten
+            selectedRatio = 5:2
+            allowedAspectRatios {
+                5:2 {
+                    title = 5:2 (Kopfbild)
+                    value = 2.5
+                }
+            }
+        }
+    }
 }
