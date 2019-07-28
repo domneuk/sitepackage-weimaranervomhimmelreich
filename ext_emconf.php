@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = [
             'rte_ckeditor' => '^9.0.0',
             'form' => '^9.5.0',
             'cookiebanner' => '^1.2.4',
-            'just_news' => '^1.0.3',
+            'just_news' => '^1.1.0',
             'favicon' => '^0.0.2'
         ],
         'conflicts' => [
@@ -32,5 +32,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Dominik Neukamm',
     'author_email' => 'domneuk@gmail.com',
     'author_company' => 'Domneuk',
-    'version' => '1.5.3',
+    'version' => '1.5.4',
 ];

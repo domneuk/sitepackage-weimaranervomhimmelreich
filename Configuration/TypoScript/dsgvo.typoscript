@@ -1,4 +1,4 @@
 // robots noindex und nofollow für impressum und datenschutz
-[globalVar = TSFE:id = 9|10]
+[page["uid"] in 9..10]
   page.meta.robots = noindex, nofollow
 [global]

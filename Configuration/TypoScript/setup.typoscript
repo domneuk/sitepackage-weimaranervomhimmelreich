@@ -240,11 +240,9 @@ config {
     // Disable Image Upscaling
     noScaleUp = 1
 
-    // TODO activate when on production
     // Compression and Concatenation of CSS and JS Files
     compressJs = 1
     compressCss = 1
     concatenateJs = 1
     concatenateCss = 1
-    // TODO activate when on production
 }

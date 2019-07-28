@@ -2,7 +2,7 @@
 #### DEPENDENCIES ####
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:just_news/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:just_news/Configuration/TypoScript/constants.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cookiebanner/Configuration/TypoScript/constants.typoscript">
 
 
@@ -49,7 +49,7 @@ page {
 ### CONFIG ###
 ##############
 config {
-    no_cache = 1 # TODO: remove, just for debugging
+    no_cache = 0
     removeDefaultJS = 0
     admPanel = 1
     prefixLocalAnchors = all
