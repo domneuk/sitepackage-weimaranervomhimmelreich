@@ -24,3 +24,7 @@ tt_content.news_menu_subpages {
         }
     }
 }
+
+# Ignore categories
+tt_content.NewsList.dataProcessing.10.where.cObject.20 >
+tt_content.NewsList.dataProcessing.10.join >

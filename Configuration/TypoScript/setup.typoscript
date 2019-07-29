@@ -1,27 +1,27 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:form/Configuration/TypoScript/setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:just_news/Configuration/TypoScript/setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cookiebanner/Configuration/TypoScript/setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:favicon/Configuration/TypoScript/setup.typoscript">
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:just_news/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:cookiebanner/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:favicon/Configuration/TypoScript/setup.typoscript'
 
 
 ################
 #### HELPER ####
 ################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/ParseFunc.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/DynamicContent.typoscript">
-# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/CountContent.typoscript">
+@import 'EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/ParseFunc.typoscript'
+@import 'EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+// @import 'EXT:weimaranervomhimmelreich/Configuration/TypoScript/Helper/CountContent.typoscript'
 
 ####################
 #### ADDITIONAL ####
 ####################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/form.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/cookiebanner.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/justnews.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:weimaranervomhimmelreich/Configuration/TypoScript/dsgvo.typoscript">
+@import 'EXT:weimaranervomhimmelreich/Configuration/TypoScript/form.typoscript'
+@import 'EXT:weimaranervomhimmelreich/Configuration/TypoScript/cookiebanner.typoscript'
+@import 'EXT:weimaranervomhimmelreich/Configuration/TypoScript/justnews.typoscript'
+@import 'EXT:weimaranervomhimmelreich/Configuration/TypoScript/dsgvo.typoscript'
 
 
 ##############
