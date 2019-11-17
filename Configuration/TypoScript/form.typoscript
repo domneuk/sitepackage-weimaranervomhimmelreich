@@ -5,7 +5,7 @@ plugin.tx_form {
                 renderables {
                     0 {
                         renderables {
-                            4 {
+                            5 {
                                 label = TEXT
                                 label.value = Datenschutzerklärung
                                 label.typolink.parameter = 10#c74
