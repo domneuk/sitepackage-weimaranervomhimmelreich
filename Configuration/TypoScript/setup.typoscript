@@ -161,8 +161,9 @@ page {
     }
 
     includeCSSLibs {
-        weimaranervomhimmelreich_google = https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700
-        weimaranervomhimmelreich_google.external = 1
+        #weimaranervomhimmelreich_google = https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700
+        #weimaranervomhimmelreich_google.external = 1
+        weimaranervomhimmelreich_poppins = EXT:weimaranervomhimmelreich/Resources/Public/Css/font-poppins.css
         weimaranervomhimmelreich_fontawesome = EXT:weimaranervomhimmelreich/Resources/Public/Css/font-awesome.min.css
         weimaranervomhimmelreich_bootstrap = EXT:weimaranervomhimmelreich/Resources/Public/Css/bootstrap.css
     }
